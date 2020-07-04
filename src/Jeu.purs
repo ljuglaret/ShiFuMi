@@ -390,9 +390,9 @@ associePFCLS  5 = Spock
 associePFCLS  _ = Pierre
 
 associe2 :: Int -> Poke
-associe2  6  = Bulbi
-associe2  7  = Cara 
-associe2  8 = Sala
+associe2  1  = Bulbi
+associe2  2  = Cara 
+associe2  3 = Sala
 associe2  _ = Bulbi
 
 

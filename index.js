@@ -8887,13 +8887,13 @@ var PS = {};
       return P.value;
   };
   var associe2 = function (v) {
-      if (v === 6) {
+      if (v === 1) {
           return Bulbi.value;
       };
-      if (v === 7) {
+      if (v === 2) {
           return Cara.value;
       };
-      if (v === 8) {
+      if (v === 3) {
           return Sala.value;
       };
       return Bulbi.value;
