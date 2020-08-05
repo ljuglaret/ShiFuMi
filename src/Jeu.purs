@@ -79,6 +79,8 @@ instance showPoke :: Show Poke  where
 
 data Mode = PFC | PFCLS | Poke
 
+type UnJeu a = {jeu :: a }
+
 
 data  Models = 
               ChoisirJeu
@@ -280,7 +282,7 @@ renderNextButton action message =
   [ HH.text message ]
 
 update ::  forall m.  MonadEffect m  => Msg -> H.HalogenM State Msg () Void m Unit
-update (DebuteJeu mode) = 
+update (DebuteJeu mode) =
   case mode of 
     PFCLS -> H.modify_ _{stage = JeuPFCLS 0 }
     Poke -> H.modify_ _{stage = JeuPoke 0 }

@@ -10,9 +10,6 @@
 
         }
 
-   img{
-  margin : 15px;}
-
 .modesDeJeux{width : 100%;}
 .modesDeJeux .divAlignee{
   font-style: italic;
@@ -36,10 +33,38 @@
 }
 
 .modesDeJeux .divAlignee img{
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
   width : 65%
 
+}
+ 
+ .box{
+   width: 20%;
+  display: inline-block;
+  position: relative;
+
+ }
+ 
+ 
+ .box .texte{
+  opacity:0;
+
+}
+ 
+.box img{
+  display: block;
+}
+
+.box:hover .texte {
+  opacity:1;
+  color:  black;
+  font-family: cursive;
+  position: absolute;
+ top: 25%;
+ left: 5%;
+ width: 100%;
+ font-size: medium;
 }
         button {
             color :rgb(97, 119, 143) ; 
@@ -50,7 +75,6 @@
         }
         .affichageRegles {
           display:  none;
-          background-image: url("src/img/parchemin.png");
           background-attachment: local;
           background-repeat: no-repeat;
           color: black;
@@ -71,10 +95,7 @@
 
         .survol:hover .affichageRegles{
           display: block;
-        }
-
-     
-    
+                }
 
         h1{
           text-align: center;
@@ -91,13 +112,8 @@
       transform: scale(1.4);
     }
 
-    a:hover {
-text-decoration :double;
-text-decoration-color: blueviolet;
-}
-a {
-  text-decoration: none;
-}
+ 
+
 
     </style>
 <title>ShiFuMi et Compagnie </title>

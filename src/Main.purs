@@ -5,7 +5,7 @@ import Prelude
 import Effect (Effect)
 import Halogen.Aff as HA
 import Halogen.VDom.Driver (runUI)
-import Jeu as Jeu
+import Jeu2 as Jeu
 
 main :: Effect Unit
 main = HA.runHalogenAff $
